@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/icons/icon183.jpg" />
+    <link rel="manifest" href="/app.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triathlon</title>
+  </head>
+  <body class="m-4">
+    <h1>Triathlon Vite + React + IndexDB + PWA</h1>
+    <p>Tip: Hover on buttons to see details!</p>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./triathlon_service_worker.js', { scope: './' });
+      }
+    </script>
+    <script type="module">
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", async () => {
+          try {
+            const registration = await navigator.serviceWorker.register(
+              "./triathlon_service_worker.js"
+            )
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            )
+          } catch (err) {
+            console.error("ServiceWorker registration failed: ", err)
+          }
+        })
+      }
+    </script>
+  </body>
+</html>

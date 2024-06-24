@@ -1,0 +1,44 @@
+{
+    "lang": "en-nz",
+    "name": "Triathlon Register application",
+    "short_name": "OarBit Pulse",
+    "description": "A basic atlete registration application that records athlete id, name, and duration.",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "icons/icon200.png",
+            "sizes": "200x200",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon612.jpg",
+            "sizes": "612x612",
+            "type": "image/jpg"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "icons/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Wonder Widgets"
+        },
+        {
+         "src": "icons/icon612.jpg",
+          "sizes": "612x612",
+          "type": "image/jpg",
+          "form_factor": "wide",
+          "label": "Wonder Widgets"
+        }
+    ]
+}
